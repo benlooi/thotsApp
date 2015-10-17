@@ -1,0 +1,53 @@
+ <ion-modal-view>
+    <ion-header-bar>
+      <h1 class="title">Comment</h1>
+    </ion-header-bar>
+    <ion-content>
+    <div class="list">
+    	<div class="item item-input" ng-show="counter==1">
+
+      <textarea placeholder="Describe the experience." rows="10"></textarea><br>
+      
+      	</div>
+
+        <div class="item item-input" ng-show="counter==2">
+
+      <textarea placeholder="Examine the experience. How did this experience make me feel (positively and/or negatively)? How did I handle my emotional reactions?" rows="10"></textarea>
+
+     
+        </div>
+
+        <div class="item item-input" ng-show="counter==3">
+
+      <textarea placeholder="What did I learn? How, specifically, did I learn it? Why does this learning matter, why is it important?" rows="10"></textarea>
+        </div>
+        <div class="item" ng-show="counter==4">
+       
+        <div class="list">
+         <h2>Values experienced/observed</h2>
+          
+          <ion-checkbox >Compassion</ion-checkbox>
+          
+         
+          <ion-checkbox >Determination</ion-checkbox>
+          
+          
+          <ion-checkbox >Resilience</ion-checkbox>
+         
+        
+          <ion-checkbox >Humility</ion-checkbox>
+       
+      </div>
+      
+        </div>
+        <div class="action-buttons">
+        <button class="button button-positive float-left" ng-click="prevQn()" ng-show="counter>1">Back</button>
+       
+        
+         <button class="button button-positive float-right" ng-click="nextQn()" ng-show="counter<4">Next</button>
+         
+      <button class="button button-positive float-right" ng-show="counter==4">OK</button>
+      </div>
+      </div>
+    </ion-content>
+  </ion-modal-view>

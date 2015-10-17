@@ -1,0 +1,25 @@
+<ion-view view-title="Thots">
+  <ion-content class="padding">
+Hello
+    <div class="list card"  >
+      <div class="item item-divider">
+      <div class="thots-img">
+      <div class="">
+       <button class="button button-energized " ng-click="showPopup()"><i class="ion-ios-camera" ng-show="!imageURI"></i></button>
+      </div>
+      
+     <img ng-src="{{imageURI}}" ng-show="imageURI">
+     </div>
+      
+      </div>
+      <div class="item item-body">
+       
+        <div class="actions text-center">
+          <div class="button button-calm " ng-click="postComment()"><i class="ion-chatbubble icon"></i>Comment</div>
+        </div>
+      </div>
+    </div>
+    
+    
+  </ion-content>
+</ion-view>

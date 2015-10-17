@@ -1,0 +1,24 @@
+<ion-view view-title="home">
+  <ion-content class="padding">
+
+    <div class="list card"  ng-repeat="post in posts">
+      <div class="item item-divider">
+     
+        <p>{{post.username}}</p>
+      </div>
+      <div class="item item-body">
+        <div class="thots-img">
+        <img ng-src="img/{{post.image}}">
+        </div>
+          <p>{{post.content}}</p>
+          <span> <i class="ion-heart assertive icon"></i>2 likes</span><span><i class="ion-chatbubble royal icon"></i> 0 comments</span>
+        </div>
+        <div class="actions">
+          <div class="button button-assertive float-left"><i class="ion-heart icon"></i> Like</div><div class="button button-positive float-left" ng-click="postComment(post.post_id)"><i class="ion-chatbubble icon"></i> Comment</div>
+        </div>
+      </div>
+    
+    
+    
+  </ion-content>
+</ion-view>

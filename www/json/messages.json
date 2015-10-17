@@ -1,0 +1,16 @@
+[
+{"message_id":"1",
+"content":"Please pen your thoughts on the Outing to Old Folks Home.",
+"sender":"Mr Tan",
+"date":"20 Sep 2015",
+"image":"image01.jpg",
+"groups":["1","2"]
+},
+{"message_id":"2",
+"content":"Please pen your thoughts on the Service to Childrens Home.",
+"sender":"Mr Wong",
+"date":"21 Sep 2015",
+"image":"image01.jpg",
+"groups":["1","2"]
+}
+]

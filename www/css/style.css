@@ -1,0 +1,37 @@
+/* Empty. Add your own CSS if you like */
+.round_button {
+
+	width:50px;
+	height:50px;
+	border-radius: 50%;
+	border:1px solid gray;
+	text-align: center;
+	left:0px;
+
+}
+
+.thots-img {
+
+	width:95vw;
+	height:95vw;
+	margin:5vw;
+	overflow:hidden;
+}
+.thots-img>img{
+	width:95vw;
+	height:95vw;
+	overflow:hidden;
+	
+}
+.action_buttons {
+	
+	display: inline;
+}
+.float-left {
+	margin:5px;
+	float: left;
+}
+.float-right {
+	margin:5px;
+	float:right;
+}

@@ -1,0 +1,21 @@
+<ion-view view-title="Messages">
+  <ion-content class="padding">
+
+    <div class="list"  ng-repeat="message in messages">
+      <div class="item item-divider">
+      <b>{{message.sender}} says...</b>
+      </div>
+      <div class="item item-body">
+        <div>
+        <p>{{message.content}}</p>
+
+        </div>
+        <div class="actions">
+          <div class="assertive button" ng-click="getPhoto()"><i class="ion-edit icon"></i>Pen my thots...</div>
+        </div>
+      </div>
+    </div>
+    
+    
+  </ion-content>
+</ion-view>
