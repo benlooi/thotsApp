@@ -1,0 +1,71 @@
+<ion-view view-title="Post">
+  <ion-content class="padding">
+
+
+<div ng-show="counter==1">
+    <div class="text-center"  >
+    
+      <div class="button  button-block button-balanced ion-aperture icon" ng-click="getPhoto()"> Take a Pic</div>
+      <div class="button button-block  button-energized ion-images icon" ng-click="getPhotoFromGallery()"> Gallery</div>
+    
+    </div> 
+  </div>  
+  <div class="item item-input" ng-show="counter==2">
+
+      <textarea placeholder="Describe experience objectively. Where and when this experience happens?Who are there and what happen? What did I/others do?
+" rows="10" ng-model="post.d_part" ng-blur="check_d()"></textarea><br>
+      
+        </div>
+
+        <div class="item item-input" ng-show="counter==3">
+
+      <textarea placeholder="Examine the experience. How did this experience make me feel (positive or negative)? What were my assumptions/expectations before this experience? How did this experience bring out my own attitudes/biases towards others?
+" rows="8" ng-model="post.e_part" ng-blur="check_e()"></textarea>
+
+     
+        </div>
+
+        <div class="item item-input" ng-show="counter==4">
+
+      <textarea placeholder="Articulate Learning. What did I learn? How, specifically, did I learn it? In what ways will I use this learning to improve myself?
+" rows="10" ng-model="post.al_part" ng-blur="check_al()"></textarea>
+        </div>
+        <div class="item" ng-show="counter==5">
+      
+        <div class="list" >
+         <h2>Values experienced/observed</h2>
+          
+          <ion-checkbox ng-repeat="value in values" ng-model="value.checked" ng-checked="value.checked" ng-click="check_values()">{{value.description}}</ion-checkbox>
+          
+         
+         
+         </div>
+      
+        </div>
+        
+        <div class="" ng-show="counter==6" >
+          
+          <ion-toggle ng-model="post.private.checked" ng-checked="post.private.checked" toggle-class="toggle-calm">Set post as Private</ion-toggle>
+            
+          
+
+
+        </div>
+         <div class="action-buttons">
+         <div class="button-bar">
+        <button class="button button-positive" ng-click="prevQn()" ng-show="counter>1">Back</button>
+       
+        
+         <button class="button button-positive" ng-click="nextQn()" ng-show="counter<6 && post.imageURI" ng-disabled="isDisabled" disabled>Next</button>
+         
+      <button class="button button-positive" ng-show="counter==6" ng-click="sendPost()">Post</button>
+      </div>
+      </div>
+      <div class="list card">
+          <div class="item item-image">
+               <img  ng-show="post.imageURI"  id="preview"/>
+        </div>
+      </div>
+    
+  </ion-content>
+</ion-view>

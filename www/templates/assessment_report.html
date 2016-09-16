@@ -1,0 +1,27 @@
+<ion-view view-title="Report">
+<ion-content>
+<canvas id="bar" class="chart chart-bar" chart-data="rdata" chart-legend="true" chart-series="rseries" chart-labels="rlabels" chart-options="roptions"></canvas>
+
+<div class="card">
+	<h4>STRENGTHS</h4>
+	<p>Your strengths are {{strength_awareness}},{{strength_affection}} and {{strength_ability}}. </p>
+	<h5>{{strength_awareness}}</h5>
+	<p>{{strength_awareness_para}}</p>
+	<h5>{{strength_affection}}</h5>
+	<p>{{strength_affection_para}}</p>
+	<h5>{{strength_ability}}</h5>
+	<p>{{strength_ability_para}}</p>
+</div>
+<div class="card">
+	<h4>AREAS OF IMPROVEMENT</h4>
+	<p>To reach your fullest potential as a leader, you should continue to work on your areas of improvement. Your areas of development are: {{lowest_awareness}},{{lowest_affection}} and {{lowest_ability}}. </p>
+</div>
+<div class="card">
+	<h4>OVERALL</h4>
+	<p ng-show="achievement!='developing'">Your Leadership competencies is currently at {{achievement}} level.</p>
+	<p ng-show="achievement=='developing'">Your Leadership competencies are currently still developing.</p>
+	
+	
+</div>
+</ion-content>
+</ion-view>

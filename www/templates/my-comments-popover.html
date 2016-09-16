@@ -1,0 +1,14 @@
+<ion-popover-view>
+    <ion-header-bar>
+      <h1 class="title">Comments</h1>
+    </ion-header-bar>
+    <ion-content>
+       <div class="list">
+       <a class="item" ng-click="flagComment(this_comment,loggedinuser.user_id)" >Flag as inappropriate...</a>
+      <a class="item" ng-click="showEditComment(this_comment)" ng-show="this_comment.from_user==loggedinuser.user_id ">Edit...</a>
+      <a class="item" ng-click="deleteComment(this_comment)" ng-show="loggedinuser.user_id==this_comment.from_user">Delete comment...</a>
+      
+    </div>
+      
+    </ion-content>
+  </ion-popover-view>

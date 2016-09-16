@@ -1,0 +1,8 @@
+[
+{"description":"Strongly Disagree","score":1},
+{"description":"Disagree","score":2},
+{"description":"Slightly Disagree","score":3},
+{"description":"Slightly Agree","score":4},
+{"description":"Agree","score":5},
+{"description":"Strongly Agree","score":6}
+]

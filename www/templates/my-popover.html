@@ -1,0 +1,16 @@
+<ion-popover-view>
+    <ion-header-bar>
+      <h1 class="title">Report Post</h1>
+    </ion-header-bar>
+    <ion-content>
+   
+    <div class="list">
+      <a class="item" ng-click="flagPost(this_entry.from_user,this_entry.entry_id)">Flag as inappropriate</a>
+      <a class="item" ng-click="showEditPost(this_entry,index)" ng-show="loggedinuser.user_id==this_entry.from_user">Edit...</a>
+      <a class="item" ng-click="deletePost(this_entry,$index)" ng-show="loggedinuser.user_id==this_entry.from_user">Delete post...</a>
+      <a class="item" ng-click="setPrivacy(this_entry)" ng-show="loggedinuser.user_id==this_entry.from_user">Change privacy...</a>
+    </div>
+      
+    </ion-content>
+  </ion-popover-view>
+

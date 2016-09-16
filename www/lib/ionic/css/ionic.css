@@ -3608,7 +3608,23 @@ a.subdued {
   .tabs-dark > .tabs .tab-item .badge, .tabs.tabs-dark .tab-item .badge {
     background-color: #fff;
     color: #444; }
+.tabs-wgs-blue > .tabs, .tabs.tabs-wgs-blue {
+  border-color: #28a54c;
+  background-color: #5a9bd5;
+  background-image: linear-gradient(0deg, #28a54c, #28a54c 50%, transparent 50%);
+  color: #fff; }
+  .tabs-wgs-blue  > .tabs .tab-item .badge, .tabs.tabs-wgs-blue .tab-item .badge {
+    background-color: #5a9bd5;
+    color: #33cd5f; }
 
+    .tabs-wgs-orange > .tabs, .tabs.tabs-wgs-orange {
+  border-color: #28a54c;
+  background-color: #ffc000;
+  background-image: linear-gradient(0deg, #28a54c, #28a54c 50%, transparent 50%);
+  color: #fff; }
+  .tabs-wgs-orange  > .tabs .tab-item .badge, .tabs.tabs-wgs-orange .tab-item .badge {
+    background-color: #ffc000;
+    color: #33cd5f; }
 .tabs-striped .tabs {
   background-color: white;
   background-image: none;

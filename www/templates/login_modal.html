@@ -1,0 +1,32 @@
+ <ion-modal-view>
+    <ion-header-bar>
+      <h1 class="title">Username and Password Help</h1>
+    </ion-header-bar>
+    <ion-content>
+    <div class="list">
+    <p>Enter your email. If your records exist, instructions will be sent to you.</p>
+    <p>Or you may approach your Teacher for assistance.</p>
+    <form name="emailForm" novalidate>
+    	
+      <label class="item item-input">
+         <input type="email" name="email" placeholder="Your Email" ng-model="request.email" required>
+         
+      </label>
+
+      </div>
+      <p ng-show="emailForm.$error.email">Invalid email address.</p>
+      
+      	
+
+        
+      
+        </div>
+        <div class="text-center">
+        
+         
+      <button class="button button-positive " ng-click="closeModal() ">Cancel</button>
+      <button class="button button-positive " ng-click="requestHelp() " ng-disabled="emailForm.$invalid">Submit</button>
+      </div>
+      
+    </ion-content>
+  </ion-modal-view>

@@ -5,7 +5,10 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','starter.directives','ngMessages','chart.js','ionicLazyLoad'])
+.constant('ApiEndPoint', {
+  url: "http://www.pompipi.co/thots/apis/index.php/"
+})
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -20,8 +23,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   });
 })
-
-.config(function($stateProvider, $urlRouterProvider) {
+.run(function($http) {
+  $http.defaults.headers.common['Authorization'] = 'Basic' + 'alakazam'
+})
+.config(['$httpProvider', function($httpProvider) {
+  $httpProvider.defaults.withCredentials = false;
+}])
+.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider) {
+  $ionicConfigProvider.tabs.position('bottom');
 
   // Ionic uses AngularUI Router which uses the concept of states
   // Learn more here: https://github.com/angular-ui/ui-router
@@ -29,17 +38,33 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   // Each state's controller can be found in controllers.js
   $stateProvider
 
-  // setup an abstract state for the tabs directive
-    .state('tab', {
-    url: "/tab",
-    abstract: true,
-    templateUrl: "templates/tabs.html",
-    controller:'tabsCtrl'
-  })
+    
 
   // Each tab has its own nav history stack:
+.state('login',{
+  url:'/login',
+  templateUrl:"templates/login.html",
+  controller:'loginCtrl'
+})
+.state('home',{
+url:'/home',
+abstract:true,
+templateUrl: 'templates/home.html',
+controller:'HomeCtrl'
+})
 
-  .state('tab.home', {
+.state('home.tab', {
+    url: "/tab",
+    abstract: true,
+    views: {
+      'main': {
+        templateUrl: "templates/tabs.html",
+    controller:'tabsCtrl'
+      }
+    }
+    
+  })
+  .state('home.tab.home', {
     url: '/home',
     views: {
       'tab-home': {
@@ -48,37 +73,108 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
-
-  .state('tab.snap', {
-      url: '/snap',
-      views: {
-        'tab-snap': {
-          templateUrl: 'templates/tab-snap.html',
-          controller: 'SnapCtrl'
-        }
-      }
-    })
-    .state('tab.assignment', {
-      url: '/assignment',
-      views: {
-        'tab-assignment': {
-          templateUrl: 'templates/assignment.html',
-          controller: 'assignmentCtrl'
-        }
-      }
-    })
-
-  .state('tab.account', {
-    url: '/account',
+  .state('home.tab.mythots', {
+    url: '/mythots',
     views: {
-      'tab-account': {
-        templateUrl: 'templates/tab-account.html',
-        controller: 'AccountCtrl'
+      'tab-mythots': {
+        templateUrl: 'templates/tab-mythots.html',
+        controller: 'myThotsCtrl'
       }
     }
-  });
+  })
+
+  .state('home.tab.thots', {
+      url: '/thots',
+      abstract:true,
+      views: {
+        'tab-snap': {
+          templateUrl: 'templates/thots.html',
+          controller: 'thotsCtrl'
+        }
+      }
+    })
+
+
+  .state('home.tab.thots.home', {
+    url: "/home",
+    views: {
+      'thotsHome': {
+    templateUrl: "templates/thots_home.html",
+    controller:'thotsCtrl'
+  }
+  }
+  })
+  .state('home.tab.thots.assignments', {
+    url: "/assignments",
+    views: {
+      'thotsHome': {
+    templateUrl: "templates/assignments.html",
+    controller:'assignmentCtrl'
+    }
+  }
+  })
+  .state('home.tab.thots.survey', {
+    url: "/survey",
+    views: {
+      'thotsHome': {
+    templateUrl: "templates/survey.html",
+    controller:'assignmentCtrl'
+    }
+  }
+  })
+  .state('home.tab.thots.write', {
+    url: "/write/:assignmentID",
+    views: {
+      "thotsHome": {
+    templateUrl: "templates/write.html",
+    controller:'thotsCtrl'
+    }
+  }
+  })
+  .state('home.assessment',{
+    url:"/assessment",
+    views: {
+      'main':{
+         templateUrl:"templates/assessment.html",
+    controller:"assessmentCtrl"
+      }
+    }
+   
+})
+   .state('home.report',{
+    url:"/report",
+    views: {
+      'main':{
+         templateUrl:"templates/assessment_report.html",
+    controller:"reportCtrl"
+      }
+    }
+   
+})
+   .state('home.myprofile',{
+    url:"/myprofile",
+    views: {
+      'main':{
+         templateUrl:"templates/profile.html",
+    controller:"profileCtrl"
+      }
+    }
+   
+})
+   .state('home.about',{
+    url:"/about",
+    views: {
+      'main':{
+         templateUrl:"templates/about.html",
+    controller:"HomeCtrl"
+      }
+    }
+   
+})
+
+  ;
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/home');
+  $urlRouterProvider.otherwise('/login');
 
 });

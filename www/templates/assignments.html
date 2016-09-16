@@ -1,0 +1,25 @@
+<ion-view view-title="School Based Reflections">
+
+  <ion-content class="padding">
+<ion-refresher
+    pulling-text="Pull to refresh..."
+    on-refresh="doRefresh()">
+  </ion-refresher>
+    <div class="list ">
+     <div class="item " ng-repeat="event in events |orderBy:'-message_id' track by $index" ng-class="{done:event.done==true}">
+     <p style="font-weight: bold;">{{event.title}}</p>
+     <p style="font-size: 0.5rem;color:orange">{{event.datetime}}</p>
+     <div class="button-bar">
+     	<div class="button button-wgs-blue"  ng-click="makeThot(event.message_id)"> <i class="ion-compose icon"></i> Write </div>
+     	<div class="button button-wgs-orange"  ng-click="doSurvey(event.message_id)"> <i class="ion-clipboard icon " ></i> Survey </div>
+     	<div class="button button-wgs-yellow"  ng-click="showDetails(event.message_id)"> <i class="ion-information-circled icon " ng-click="showDetails(event.message_id)"></i> Info </div>
+     </div>
+     
+     
+      </div>
+      </div>
+    
+    
+    
+  </ion-content>
+</ion-view>

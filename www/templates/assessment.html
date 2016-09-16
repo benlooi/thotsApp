@@ -1,0 +1,48 @@
+<ion-view title="Assessment" >
+	<ion-content padding="true">
+	
+	<div class="card" ng-show="counter==-1">
+	<div class="item item-text-wrap">
+	<h1>Self-Assessment</h1>
+		<p>
+			In Woodgrove Secondary School, one of the four desired traits of a Woodgrover is to be a <strong>“Compassion leader with a passion to serve”</strong>. To help students achieve this desired trait, the school has developed its own distinctive programme known as <b>Community Youth Leadership (CYL) Programme</b>. The school CYL aims to nurture students to achieve the 3A student outcomes. (Awareness, Affection, Ability to Act).</p>
+			 <h2>Awareness</h2>
+			 <p>Students having the awareness of the various needs of the different community sectors in Singapore and beyond.</p> 
+			 <h2>Affection</h2>
+			 <p>Students having compassion for others, feeling committed and motivated to meet the community needs.</p>
+			 <h2>Ability to Act</h2>
+			 <p>Students having the confidence and skills to meet the community needs.</p>
+			 <p>The CYL progamme design is anchored on the 3A4P model, and in this assessment, you will be conducting a self-assessment to monitor your own development as a community youth leader based on this model. We hope you will answer the questions truthfully and it should take approximately 15 minutes to complete.</p>
+
+		
+		<div class="text-center">
+		<div class="button button-energized" ng-click="viewReport()" ng-disabled="canTakeTest==true">View Last Assessment Report</div>
+		<div class="button button-energized" ng-click="nextQn(-1)" ng-disabled="!canTakeTest">Do Questionnaire</div>
+		<p  ng-show="!canTakeTest">Your last assessment was done less than 6 months ago. Do attempt the test after 6 months.</p>
+		<div>
+		</div>
+		</div>
+		</div>
+	</div>
+	<div class="list"ng-repeat="qn in assessment track by $index" ng-show="counter==$index">
+	
+		<h2>{{qn.statement}}</h2>
+		<div class="list card">
+		<ion-radio class="item" ng-repeat="choice in qn.choices" ng-model="qn.score" ng-value="choice.score" name="{{qn.qn_no}}" ng-checked="choice.score==qn.score">
+		{{choice.choice}}
+		
+		</ion-radio>
+		</div>
+		<div>
+	 <progress ng-value="counter+1" max="{{assessment.length}}"></progress>
+	 <span ng-show="counter>-1">{{counter+1}} of {{assessment.length}}</span>
+		<div>
+		<button class="button button-teal float-left" ng-click="prevQn($index)" ng-hide="counter<0">Back</button>
+		<button class="button button-teal float-right" ng-click="nextQn($index)" ng-show="counter<assessment.length-1" ng-disabled="!assessment[$index].score">Next</button>
+		<button class=" button button-energized float-right" ng-click="submitAssessment($index)" ng-show="counter==assessment.length-1" ng-disabled="!assessment[$index].score">Submit</button>
+	 </div>
+	 </div>
+	 
+	
+</ion-content>
+</ion-view>

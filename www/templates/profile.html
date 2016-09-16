@@ -1,0 +1,43 @@
+<ion-view title="My Profile">
+
+<ion-content >
+<div class="padded">
+	<h3 style="text-align:center;color:teal;font-weight:100">Change Avatar</h3>
+	
+		<img ng-src="{{user_image}}" class="profile_image" ng-show="new_image==false"/>
+		<img id="preview" class="profile_image" ng-show="new_image==true">
+	<div class="button button-calm" ng-click="getPhotoFromGallery()" ng-show="!new_image">
+		Select Pic from gallery
+	</div>
+	<div class="button button-energized" ng-click="changeAvatar()" ng-show="new_image">
+		Change Avatar
+	</div>
+	
+	<h3 style="text-align:center;color:teal;font-weight:100">Change Username</h3>
+	<form name="registrationForm" novalidate>
+	<div class="list">
+	<div class="input">
+	<input type="text" placeholder="Enter new user name" ng-model="user.newUserName" name="newUserName" ng-pattern="/^[a-zA-z0-9_^/S]*$/" ng-minlength="5" ng-maxlength="25">
+	</div>
+	</div>
+	<p ng-show="registrationForm.newUserName.$error.pattern ">Only letters, numbers and underscores allowed. No spaces or other characters.</p>
+	<p ng-show="registrationForm.newUserName.$error.minlength ">Username must be at least 5 characters long.</p>
+	<p ng-show="registrationForm.newUserName.$error.maxlength ">Username cannot exceed  25 characters.</p>
+	<div class="button button-calm" ng-click="changeUserName()">Change Username</div>
+	<h3 style="text-align:center;color:teal;font-weight:100">Change Password</h3>
+	
+	<div class="list">
+	<div class="input">
+	<input type="password" name="password" placeholder="Enter new password" ng-model="user.newpassword" ng-pattern="/^[a-zA-z0-9_!$@/S]*$/" required />
+	<p ng-show="registrationForm.password.$error.pattern ">Only letters, numbers and underscores allowed. No spaces or other characters.</p>
+	<input type="password" name="confirmPassword" placeholder="Confirm new password" ng-model="user.confirmpassword" compare-to="user.newpassword" ng-pattern="/^[a-zA-z0-9_!$@/S]*$/" />
+	<p ng-show="registrationForm.confirmPassword.$error.pattern ">Only letters, numbers and underscores allowed. No spaces or other characters.</p>
+	<p ng-show="registrationForm.confirmPassword.$dirty && registrationForm.confirmPassword.$error.compareTo">Passwords must match.</p>
+	</div>
+
+	<div class="button button-calm" ng-click="changeNewPassword()" >Change Password</div>
+	</form>
+	</div>
+</dic>	
+</ion-content>
+</ion-view>

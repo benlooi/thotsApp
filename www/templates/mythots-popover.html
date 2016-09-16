@@ -1,0 +1,15 @@
+<ion-popover-view>
+    <ion-header-bar>
+      <h1 class="title">Post Settings</h1>
+    </ion-header-bar>
+    <ion-content>
+   <pre>{{index}}</pre>
+    <div class="list">
+     
+      <a class="item" ng-click="showEditPost(this_entry,index)">Edit...</a>
+      <a class="item" ng-click="deletePost(this_entry,$index)" >Delete post...</a>
+      <a class="item" ng-click="setPrivacy(this_entry)" >Change privacy...</a>
+    </div>
+      
+    </ion-content>
+  </ion-popover-view>

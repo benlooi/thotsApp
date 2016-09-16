@@ -1,0 +1,53 @@
+<ion-view title="My Thots">
+      
+  <ion-content class="padding">
+
+  <ion-refresher
+    pulling-text="Pull to refresh..."
+    on-refresh="doRefresh()">
+  </ion-refresher>
+
+    <div class="list card"  ng-repeat="(postIndex,post) in myposts|orderBy:'-datetime'" ng-init="postIndex=$index">
+    <!-- 
+     <div class="item item-avatar">
+       <img ng-src="http://www.pompipi.co/thots/apis/assets/images/avatars/{{post.avatar}}">
+      <p>{{post.username}}</p>
+      
+     </div>
+       -->
+       <i class="ion-ios-arrow-down " style="float:right;font-size:1.5rem;padding:3px" ng-click="showPopover($event,postIndex,post)"></i>
+       <p>{{post.date}}</p>
+       <p>{{post.time}}</p>
+      <div class="item item-image">
+       
+        <img ng-src="https://www.thotsapponline.com/apis/assets/images/{{post.image}}">
+        </div>
+          <div class="item">
+          <span class="values" ng-class="value" ng-repeat="value in post.values">{{value}} </span>
+        </div>
+        <div class="item item-body">
+          <p>{{post.content}}</p>
+          <p>
+          <a class="subdued"> <i class="ion-heart assertive icon"></i>{{post.likes.length}} likes</a><a class="subdued"><i class="ion-chatbubble royal icon"></i> {{post.comments.length}} comments</a></p>
+
+        </div>
+        <div class="item item-avatar" ng-repeat="comment in post.entrycomments track by $index">
+          <img ng-src="https://www.thotsapponline.com/apis/assets/images/avatars/{{comment.avatar}}">
+      <p>{{comment.username}}</p>
+      <p>{{comment.comment}}</p>
+        </div>
+
+        <div class="item tabs tabs-secondary tabs-icon-left">
+        
+           
+          <div class="tab-item" ng-click="postComment(post.entry_id)"><i class="ion-chatbubble icon"></i> Comment</div>
+        </div>
+         </div>
+        
+     
+    
+     
+    
+    
+  </ion-content>
+</ion-view>

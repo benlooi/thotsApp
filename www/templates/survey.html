@@ -1,0 +1,20 @@
+<ion-view>
+<ion-content>
+<h2>Post-Event Survey</h2>
+<p style="color:gray;font-size: 1.5rem;">We hope you enjoyed the event. Please give us feedback so that we can continue improving the event in the future.</p>
+
+<div ng-repeat="qn in survey_qns track by $index">
+	<div ng-show="s_counter==$index ">
+	<h3 >{{qn.statement}}</h3>
+
+	<div class="item" ng-show="s_counter==$index && s_counter<survey_qns.length">
+		<ion-radio ng-repeat="response in responses track by $index" ng-value="response.score" ng-model="qn.score">{{response.description}}</ion-radio>
+		<div class="button button-calm float-left" ng-click="prevQn($index)" ng-show="s_counter>0">Back</div>
+<div class="button button-calm float-right" ng-click="nextQn($index)"ng-show="s_counter<survey_qns.length-1" ng-disabled="qn.score==null">Next</div>
+<div class="button button-calm float-right" ng-click="submitSurvey()" ng-show="s_counter==survey_qns.length-1" ng-disabled="qn.score==null">Submit</div>
+	</div>
+
+
+</div>
+</ion-content>
+</ion-view>

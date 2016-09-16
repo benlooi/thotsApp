@@ -1,0 +1,12 @@
+<ion-popover-view>
+    <ion-header-bar>
+      <h1 class="title">Canned Comments</h1>
+    </ion-header-bar>
+    <ion-content>
+      <div ng-repeat="comment in cannedComments track by $index" ng-click="selectComment($index)">
+        
+        {{comment.comment}}
+      </div>
+      </div>
+    </ion-content>
+  </ion-popover-view>

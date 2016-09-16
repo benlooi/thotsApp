@@ -1,0 +1,28 @@
+ <ion-modal-view>
+    <ion-header-bar>
+      <h1 class="title">Edit Comment</h1>
+    </ion-header-bar>
+    <ion-content>
+    <p>Your comment...</p>
+    <div class="list">
+    	
+
+
+        <div class="item item-input" >
+
+      <textarea ng-model="editcomment.comment" rows="10"></textarea>
+        </div>
+       
+         
+       
+      </div>
+      
+        </div>
+        <div class="action-buttons">
+       
+         <button class="button button-positive " ng-click="closeEditComment()">Cancel</button>
+      <button class="button button-positive " ng-click="editComment()">Submit</button>
+      </div>
+      </div>
+    </ion-content>
+  </ion-modal-view>

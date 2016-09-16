@@ -1,0 +1,1129 @@
+[
+{
+"qn_no":1,
+"statement":"I am aware of my strengths and weaknesses.",
+"category":"Awareness",
+"level":"Personal",
+"choices":[{
+			"choice":"Strongly Disagree",
+			"score":1
+			},
+			{"choice":"Disagree",
+			"score":2
+			},
+			{"choice":"Slightly Disagree",
+			"score":3
+			},
+			{"choice":"Slightly Agree",
+			"score":4
+			},
+			{"choice":"Agree",
+			"score":5
+			},
+			{"choice":"Strongly Agree",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":2,
+"statement":"I am responsible for my own actions and behaviours.",
+"category":"Awareness",
+"level":"Personal",
+"choices":[{
+			"choice":"Strongly Disagree",
+			"score":1
+			},
+			{"choice":"Disagree",
+			"score":2
+			},
+			{"choice":"Slightly Disagree",
+			"score":3
+			},
+			{"choice":"Slightly Agree",
+			"score":4
+			},
+			{"choice":"Agree",
+			"score":5
+			},
+			{"choice":"Strongly Agree",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":3,
+"statement":"I am aware that it is important to manage myself well first before leading others.",
+"category":"Awareness",
+"level":"Personal",
+"choices":[{
+			"choice":"Strongly Disagree",
+			"score":1
+			},
+			{"choice":"Disagree",
+			"score":2
+			},
+			{"choice":"Slightly Disagree",
+			"score":3
+			},
+			{"choice":"Slightly Agree",
+			"score":4
+			},
+			{"choice":"Agree",
+			"score":5
+			},
+			{"choice":"Strongly Agree",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":4,
+"statement":"I am able to recognise my own emotions (e.g. Sadness, Anger, Worries, Happiness).",
+"category":"Awareness",
+"level":"Personal",
+"choices":[{
+			"choice":"Strongly Disagree",
+			"score":1
+			},
+			{"choice":"Disagree",
+			"score":2
+			},
+			{"choice":"Slightly Disagree",
+			"score":3
+			},
+			{"choice":"Slightly Agree",
+			"score":4
+			},
+			{"choice":"Agree",
+			"score":5
+			},
+			{"choice":"Strongly Agree",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":5,
+"statement":"I am confident to handle newly assigned tasks.",
+"category":"Affection",
+"level":"Personal",
+"choices":[{
+			"choice":"Strongly Disagree",
+			"score":1
+			},
+			{"choice":"Disagree",
+			"score":2
+			},
+			{"choice":"Slightly Disagree",
+			"score":3
+			},
+			{"choice":"Slightly Agree",
+			"score":4
+			},
+			{"choice":"Agree",
+			"score":5
+			},
+			{"choice":"Strongly Agree",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":6,
+"statement":"I am happy about who I am right now.",
+"category":"Affection",
+"level":"Personal",
+"choices":[{
+			"choice":"Strongly Disagree",
+			"score":1
+			},
+			{"choice":"Disagree",
+			"score":2
+			},
+			{"choice":"Slightly Disagree",
+			"score":3
+			},
+			{"choice":"Slightly Agree",
+			"score":4
+			},
+			{"choice":"Agree",
+			"score":5
+			},
+			{"choice":"Strongly Agree",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":7,
+"statement":"When I face problems in life, I know where and how to seek appropriate help.",
+"category":"Ability To Act",
+"level":"Personal",
+"choices":[{
+			"choice":"Strongly Disagree",
+			"score":1
+			},
+			{"choice":"Disagree",
+			"score":2
+			},
+			{"choice":"Slightly Disagree",
+			"score":3
+			},
+			{"choice":"Slightly Agree",
+			"score":4
+			},
+			{"choice":"Agree",
+			"score":5
+			},
+			{"choice":"Strongly Agree",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":8,
+"statement":"I believe that others have different strengths and qualities that I can learn from.",
+"category":"Awareness",
+"level":"Peer",
+"choices":[{
+			"choice":"Strongly Disagree",
+			"score":1
+			},
+			{"choice":"Disagree",
+			"score":2
+			},
+			{"choice":"Slightly Disagree",
+			"score":3
+			},
+			{"choice":"Slightly Agree",
+			"score":4
+			},
+			{"choice":"Agree",
+			"score":5
+			},
+			{"choice":"Strongly Agree",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":9,
+"statement":"I am aware of the practices of different races and religions.",
+"category":"Awareness",
+"level":"Peer",
+"choices":[{
+			"choice":"Strongly Disagree",
+			"score":1
+			},
+			{"choice":"Disagree",
+			"score":2
+			},
+			{"choice":"Slightly Disagree",
+			"score":3
+			},
+			{"choice":"Slightly Agree",
+			"score":4
+			},
+			{"choice":"Agree",
+			"score":5
+			},
+			{"choice":"Strongly Agree",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":10,
+"statement":"I am aware that each individual is unique and can contribute to the success of the team.",
+"category":"Awareness",
+"level":"Peer",
+"choices":[{
+			"choice":"Strongly Disagree",
+			"score":1
+			},
+			{"choice":"Disagree",
+			"score":2
+			},
+			{"choice":"Slightly Disagree",
+			"score":3
+			},
+			{"choice":"Slightly Agree",
+			"score":4
+			},
+			{"choice":"Agree",
+			"score":5
+			},
+			{"choice":"Strongly Agree",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":11,
+"statement":"I am able to build and maintain healthy friendship.",
+"category":"Affection",
+"level":"Peer",
+"choices":[{
+			"choice":"Strongly Disagree",
+			"score":1
+			},
+			{"choice":"Disagree",
+			"score":2
+			},
+			{"choice":"Slightly Disagree",
+			"score":3
+			},
+			{"choice":"Slightly Agree",
+			"score":4
+			},
+			{"choice":"Agree",
+			"score":5
+			},
+			{"choice":"Strongly Agree",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":12,
+"statement":"I am willing to take part in school’s community projects.",
+"category":"Affection",
+"level":"Peer",
+"choices":[{
+			"choice":"Strongly Disagree",
+			"score":1
+			},
+			{"choice":"Disagree",
+			"score":2
+			},
+			{"choice":"Slightly Disagree",
+			"score":3
+			},
+			{"choice":"Slightly Agree",
+			"score":4
+			},
+			{"choice":"Agree",
+			"score":5
+			},
+			{"choice":"Strongly Agree",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":13,
+"statement":"I am receptive to other people’s ideas.",
+"category":"Ability To Act",
+"level":"Peer",
+"choices":[{
+			"choice":"Strongly Disagree",
+			"score":1
+			},
+			{"choice":"Disagree",
+			"score":2
+			},
+			{"choice":"Slightly Disagree",
+			"score":3
+			},
+			{"choice":"Slightly Agree",
+			"score":4
+			},
+			{"choice":"Agree",
+			"score":5
+			},
+			{"choice":"Strongly Agree",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":14,
+"statement":"I know my specific role to play in this school.",
+"category":"Awareness",
+"level":"People",
+"choices":[{
+			"choice":"Strongly Disagree",
+			"score":1
+			},
+			{"choice":"Disagree",
+			"score":2
+			},
+			{"choice":"Slightly Disagree",
+			"score":3
+			},
+			{"choice":"Slightly Agree",
+			"score":4
+			},
+			{"choice":"Agree",
+			"score":5
+			},
+			{"choice":"Strongly Agree",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":15,
+"statement":"I am aware of the various platforms I can contribute to the school.",
+"category":"Awareness",
+"level":"People",
+"choices":[{
+			"choice":"Strongly Disagree",
+			"score":1
+			},
+			{"choice":"Disagree",
+			"score":2
+			},
+			{"choice":"Slightly Disagree",
+			"score":3
+			},
+			{"choice":"Slightly Agree",
+			"score":4
+			},
+			{"choice":"Agree",
+			"score":5
+			},
+			{"choice":"Strongly Agree",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":16,
+"statement":"I know that every student has a part to play in making the school a better place for all.",
+"category":"Awareness",
+"level":"People",
+"choices":[{
+			"choice":"Strongly Disagree",
+			"score":1
+			},
+			{"choice":"Disagree",
+			"score":2
+			},
+			{"choice":"Slightly Disagree",
+			"score":3
+			},
+			{"choice":"Slightly Agree",
+			"score":4
+			},
+			{"choice":"Agree",
+			"score":5
+			},
+			{"choice":"Strongly Agree",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":17,
+"statement":"I am aware that resources are not shared equally in the community, leading to some people being more well-to-do than others.",
+"category":"Awareness",
+"level":"People",
+"choices":[{
+			"choice":"Strongly Disagree",
+			"score":1
+			},
+			{"choice":"Disagree",
+			"score":2
+			},
+			{"choice":"Slightly Disagree",
+			"score":3
+			},
+			{"choice":"Slightly Agree",
+			"score":4
+			},
+			{"choice":"Agree",
+			"score":5
+			},
+			{"choice":"Strongly Agree",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":18,
+"statement":"I believe that volunteerism can help to improve the community.",
+"category":"Awareness",
+"level":"People",
+"choices":[{
+			"choice":"Strongly Disagree",
+			"score":1
+			},
+			{"choice":"Disagree",
+			"score":2
+			},
+			{"choice":"Slightly Disagree",
+			"score":3
+			},
+			{"choice":"Slightly Agree",
+			"score":4
+			},
+			{"choice":"Agree",
+			"score":5
+			},
+			{"choice":"Strongly Agree",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":19,
+"statement":"I feel that it is right for me to do something to improve the community.",
+"category":"Affection",
+"level":"People",
+"choices":[{
+			"choice":"Strongly Disagree",
+			"score":1
+			},
+			{"choice":"Disagree",
+			"score":2
+			},
+			{"choice":"Slightly Disagree",
+			"score":3
+			},
+			{"choice":"Slightly Agree",
+			"score":4
+			},
+			{"choice":"Agree",
+			"score":5
+			},
+			{"choice":"Strongly Agree",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":20,
+"statement":"I am able to lead a team of peers in a school project / programme to address an identified need. (e.g. VIA, Class activities, CCA, school events etc)",
+"category":"Ability To Act",
+"level":"People",
+"choices":[{
+			"choice":"Strongly Disagree",
+			"score":1
+			},
+			{"choice":"Disagree",
+			"score":2
+			},
+			{"choice":"Slightly Disagree",
+			"score":3
+			},
+			{"choice":"Slightly Agree",
+			"score":4
+			},
+			{"choice":"Agree",
+			"score":5
+			},
+			{"choice":"Strongly Agree",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":21,
+"statement":"I am confident in leading my schoolmates in designing a meaningful VIA/service project to address an identified need.",
+"category":"Ability to Act",
+"level":"People",
+"choices":[{
+			"choice":"Strongly Disagree",
+			"score":1
+			},
+			{"choice":"Disagree",
+			"score":2
+			},
+			{"choice":"Slightly Disagree",
+			"score":3
+			},
+			{"choice":"Slightly Agree",
+			"score":4
+			},
+			{"choice":"Agree",
+			"score":5
+			},
+			{"choice":"Strongly Agree",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":22,
+"statement":"I am aware that the specific needs of the different sectors of the society (e.g. the disabled, elderly, environment etc.)",
+"category":"Awareness",
+"level":"Public",
+"choices":[{
+			"choice":"Strongly Disagree",
+			"score":1
+			},
+			{"choice":"Disagree",
+			"score":2
+			},
+			{"choice":"Slightly Disagree",
+			"score":3
+			},
+			{"choice":"Slightly Agree",
+			"score":4
+			},
+			{"choice":"Agree",
+			"score":5
+			},
+			{"choice":"Strongly Agree",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":23,
+"statement":"I am aware of the current / global issues and how they affect my local community. ",
+"category":"Awareness",
+"level":"Public",
+"choices":[{
+			"choice":"Strongly Disagree",
+			"score":1
+			},
+			{"choice":"Disagree",
+			"score":2
+			},
+			{"choice":"Slightly Disagree",
+			"score":3
+			},
+			{"choice":"Slightly Agree",
+			"score":4
+			},
+			{"choice":"Agree",
+			"score":5
+			},
+			{"choice":"Strongly Agree",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":24,
+"statement":"I feel bad that some community members are suffering from a lack of resources.",
+"category":"Affection",
+"level":"Public",
+"choices":[{
+			"choice":"Strongly Disagree",
+			"score":1
+			},
+			{"choice":"Disagree",
+			"score":2
+			},
+			{"choice":"Slightly Disagree",
+			"score":3
+			},
+			{"choice":"Slightly Agree",
+			"score":4
+			},
+			{"choice":"Agree",
+			"score":5
+			},
+			{"choice":"Strongly Agree",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":25,
+"statement":"I feel a sense of personal satisfaction when I contribute to the community and beyond.",
+"category":"Affection",
+"level":"Public",
+"choices":[{
+			"choice":"Strongly Disagree",
+			"score":1
+			},
+			{"choice":"Disagree",
+			"score":2
+			},
+			{"choice":"Slightly Disagree",
+			"score":3
+			},
+			{"choice":"Slightly Agree",
+			"score":4
+			},
+			{"choice":"Agree",
+			"score":5
+			},
+			{"choice":"Strongly Agree",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":26,
+"statement":"I feel motivated to volunteer and I will volunteer my services to the community even if it is not a requirement set by the school.",
+"category":"Affection",
+"level":"Public",
+"choices":[{
+			"choice":"Strongly Disagree",
+			"score":1
+			},
+			{"choice":"Disagree",
+			"score":2
+			},
+			{"choice":"Slightly Disagree",
+			"score":3
+			},
+			{"choice":"Slightly Agree",
+			"score":4
+			},
+			{"choice":"Agree",
+			"score":5
+			},
+			{"choice":"Strongly Agree",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":27,
+"statement":"I am able to set goals for my academic studies, ambition and CCA.",
+"category":"Ability To Act",
+"level":"Personal",
+"choices":[{
+			"choice":"Not at all",
+			"score":1
+			},
+			{"choice":"Rarely",
+			"score":2
+			},
+			{"choice":"Sometimes",
+			"score":3
+			},
+			{"choice":"Often",
+			"score":4
+			},
+			{"choice":"Almost Always",
+			"score":5
+			},
+			{"choice":"Always",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":28,
+"statement":"When faced with many tasks, I set priorities and act on them accordingly.",
+"category":"Ability To Act",
+"level":"Personal",
+"choices":[{
+			"choice":"Not at all",
+			"score":1
+			},
+			{"choice":"Rarely",
+			"score":2
+			},
+			{"choice":"Sometimes",
+			"score":3
+			},
+			{"choice":"Often",
+			"score":4
+			},
+			{"choice":"Almost Always",
+			"score":5
+			},
+			{"choice":"Always",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":29,
+"statement":"I am able complete my homework / projects / tasks on time.",
+"category":"Ability To Act",
+"level":"Personal",
+"choices":[{
+			"choice":"Not at all",
+			"score":1
+			},
+			{"choice":"Rarely",
+			"score":2
+			},
+			{"choice":"Sometimes",
+			"score":3
+			},
+			{"choice":"Often",
+			"score":4
+			},
+			{"choice":"Almost Always",
+			"score":5
+			},
+			{"choice":"Always",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":30,
+"statement":"I am able to take appropriate action to achieve or complete the tasks given.",
+"category":"Ability To Act",
+"level":"Personal",
+"choices":[{
+			"choice":"Not at all",
+			"score":1
+			},
+			{"choice":"Rarely",
+			"score":2
+			},
+			{"choice":"Sometimes",
+			"score":3
+			},
+			{"choice":"Often",
+			"score":4
+			},
+			{"choice":"Almost Always",
+			"score":5
+			},
+			{"choice":"Always",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":31,
+"statement":"I put myself in the shoes of my peers to relate to their feelings.",
+"category":"Affection",
+"level":"Peer",
+"choices":[{
+			"choice":"Not at all",
+			"score":1
+			},
+			{"choice":"Rarely",
+			"score":2
+			},
+			{"choice":"Sometimes",
+			"score":3
+			},
+			{"choice":"Often",
+			"score":4
+			},
+			{"choice":"Almost Always",
+			"score":5
+			},
+			{"choice":"Always",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":32,
+"statement":"I show respect to others.",
+"category":"Affection",
+"level":"Peer",
+"choices":[{
+			"choice":"Not at all",
+			"score":1
+			},
+			{"choice":"Rarely",
+			"score":2
+			},
+			{"choice":"Sometimes",
+			"score":3
+			},
+			{"choice":"Often",
+			"score":4
+			},
+			{"choice":"Almost Always",
+			"score":5
+			},
+			{"choice":"Always",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":33,
+"statement":"I am sensitive to the needs and feelings of others.",
+"category":"Affection",
+"level":"Peer",
+"choices":[{
+			"choice":"Not at all",
+			"score":1
+			},
+			{"choice":"Rarely",
+			"score":2
+			},
+			{"choice":"Sometimes",
+			"score":3
+			},
+			{"choice":"Often",
+			"score":4
+			},
+			{"choice":"Almost Always",
+			"score":5
+			},
+			{"choice":"Always",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":34,
+"statement":"I take initiative to help my peers or teachers.",
+"category":"Ability To Act",
+"level":"Peer",
+"choices":[{
+			"choice":"Not at all",
+			"score":1
+			},
+			{"choice":"Rarely",
+			"score":2
+			},
+			{"choice":"Sometimes",
+			"score":3
+			},
+			{"choice":"Often",
+			"score":4
+			},
+			{"choice":"Almost Always",
+			"score":5
+			},
+			{"choice":"Always",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":35,
+"statement":"I am able to work in teams to achieve common goals.",
+"category":"Ability To Act",
+"level":"Peer",
+"choices":[{
+			"choice":"Not at all",
+			"score":1
+			},
+			{"choice":"Rarely",
+			"score":2
+			},
+			{"choice":"Sometimes",
+			"score":3
+			},
+			{"choice":"Often",
+			"score":4
+			},
+			{"choice":"Almost Always",
+			"score":5
+			},
+			{"choice":"Always",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":36,
+"statement":"I am able to confidently express my opinions and ideas.",
+"category":"Ability To Act",
+"level":"Peer",
+"choices":[{
+			"choice":"Not at all",
+			"score":1
+			},
+			{"choice":"Rarely",
+			"score":2
+			},
+			{"choice":"Sometimes",
+			"score":3
+			},
+			{"choice":"Often",
+			"score":4
+			},
+			{"choice":"Almost Always",
+			"score":5
+			},
+			{"choice":"Always",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":37,
+"statement":"I put myself in the shoes of the less privileged.",
+"category":"Affection",
+"level":"People",
+"choices":[{
+			"choice":"Not at all",
+			"score":1
+			},
+			{"choice":"Rarely",
+			"score":2
+			},
+			{"choice":"Sometimes",
+			"score":3
+			},
+			{"choice":"Often",
+			"score":4
+			},
+			{"choice":"Almost Always",
+			"score":5
+			},
+			{"choice":"Always",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":38,
+"statement":"I give encouragement to my peers.",
+"category":"Affection",
+"level":"People",
+"choices":[{
+			"choice":"Not at all",
+			"score":1
+			},
+			{"choice":"Rarely",
+			"score":2
+			},
+			{"choice":"Sometimes",
+			"score":3
+			},
+			{"choice":"Often",
+			"score":4
+			},
+			{"choice":"Almost Always",
+			"score":5
+			},
+			{"choice":"Always",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":39,
+"statement":"The number of school programmes / project which I have led. (e.g. VIA, Class activities, CCA, school events etc)",
+"category":"Ability To Act",
+"level":"People",
+"choices":[{
+			"choice":"0",
+			"score":1
+			},
+			{"choice":"1",
+			"score":2
+			},
+			{"choice":"2",
+			"score":3
+			},
+			{"choice":"3",
+			"score":4
+			},
+			{"choice":"4",
+			"score":5
+			},
+			{"choice":"5 or more",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":40,
+"statement":"The number of VWOs and NGOs which I am aware of and their specific roles in the community. ",
+"category":"Awareness",
+"level":"Public",
+"choices":[{
+			"choice":"0",
+			"score":1
+			},
+			{"choice":"1",
+			"score":2
+			},
+			{"choice":"2",
+			"score":3
+			},
+			{"choice":"3",
+			"score":4
+			},
+			{"choice":"4",
+			"score":5
+			},
+			{"choice":"5 or more",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":41,
+"statement":"I have participated in overseas service learning projects.",
+"category":"Ability To Act",
+"level":"Public",
+"choices":[{
+			"choice":"No",
+			"score":0
+			},
+			{"choice":"Yes",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":42,
+"statement":"I have volunteered my services to community beyond what is required by the school.",
+"category":"Ability To Act",
+"level":"Public",
+"choices":[{
+			"choice":"No",
+			"score":0
+			},
+			{"choice":"Yes",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+},
+{
+"qn_no":43,
+"statement":"I have found my personal passion in a specific social cause and convinced others to do so.",
+"category":"Ability To Act",
+"level":"Public",
+"max_score":6,
+"choices":[{
+			"choice":"No",
+			"score":0
+			},
+			{"choice":"Yes",
+			"score":6
+			}],
+"max_score":6,
+"score":0
+}
+
+]

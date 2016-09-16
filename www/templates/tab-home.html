@@ -1,24 +1,79 @@
-<ion-view view-title="home">
-  <ion-content class="padding">
+<ion-view title="Feed">
+      
+  <ion-content class="padding" lazy-scroll>
 
-    <div class="list card"  ng-repeat="post in posts">
-      <div class="item item-divider">
+  <ion-refresher
+    pulling-text="Pull to refresh..."
+    on-refresh="doRefresh()">
+  </ion-refresher>
+
+    <div class="list card"  ng-repeat="(PostIndex,post) in posts|orderBy:'-datetime' track by $index" ng-init="PostIndex=$index">
      
-        <p>{{post.username}}</p>
-      </div>
-      <div class="item item-body">
-        <div class="thots-img">
-        <img ng-src="img/{{post.image}}">
+     <div class="item item-avatar item-icon-right">
+       <img image-lazy-src="https://www.thotsapponline.com/apis/assets/images/avatars/{{post.avatar}}" ng-click="whoIsThis($event,post.name)"/>
+      <span ng-click="whoIsThis($event,post.name)">{{post.username}}</span>
+      <i style="float:right;font-size:1.5rem;" class="ion-ios-arrow-down" ng-click="openPopover($event,post,$index)"></i>
+      
+      <p style="color:lightgray">{{post.date_time}}</p>
+      
+      
+     
+      
+     </div>
+      
+      <div class="item item-image">
+       
+        <img image-lazy-src="https://www.thotsapponline.com/apis/assets/images/{{post.image}}" image-lazy-distance-from-bottom-to-load="50">
         </div>
+        <div class="item">
+          <div class="values" ng-class="value" ng-repeat="value in post.values">{{value}} </div>
+        </div>
+        <div class="item item-body">
           <p>{{post.content}}</p>
-          <span> <i class="ion-heart assertive icon"></i>2 likes</span><span><i class="ion-chatbubble royal icon"></i> 0 comments</span>
+          <p>
+          <a class="subdued"> <i class="ion-heart assertive icon"></i>{{post.likes.length}} likes</a><a class="subdued"><i class="ion-chatbubble royal icon"></i> {{post.comments.length}} comments</a></p>
+
         </div>
-        <div class="actions">
-          <div class="button button-assertive float-left"><i class="ion-heart icon"></i> Like</div><div class="button button-positive float-left" ng-click="postComment(post.post_id)"><i class="ion-chatbubble icon"></i> Comment</div>
+        <div class="list">
+        <a class="item item-avatar item-icon-right item-text-wrap" ng-repeat="(CommentIndex,comment) in post.entrycomments track by $index" ng-init="CommentIndex=$index">
+        
+          <img image-lazy-src="https://www.thotsapponline.com/apis/assets/images/avatars/{{comment.avatar}}" ng-click="whoIsThis($event,comment.name)" >
+          <i class="ion-ios-arrow-down " style="float:right" ng-click="showCommentPopover($event,comment,PostIndex,CommentIndex)" ng-show="comment.from_user==loggedinuser.user_id"></i>
+      <p >{{comment.username}}</p>
+      <p>{{comment.comment}} </p>
+      
+      </a>
         </div>
-      </div>
+
+        <div class="item tabs tabs-secondary tabs-icon-left">
+        
+           <div class="tab-item" ng-click="like(post.entry_id)" ng-show="!post.liked"><i class="ion-ios-heart-outline icon" ></i> Like</div>
+          <div class="tab-item" ng-click="unlike(post.entry_id)" ng-show="post.liked"><i class="ion-ios-heart assertive icon"></i> Unlike</div>
+          <div class="tab-item" ng-click="postComment(post.entry_id)"><i class="ion-chatbubble postive icon"></i> Comment</div>
+        </div>
+        
+         </div>
+        
+     
     
+     <ion-infinite-scroll
+    on-infinite="loadMore()"
+    distance="1%">
+  </ion-infinite-scroll>
     
     
   </ion-content>
 </ion-view>
+
+<script id="my-popover.html" type="text/ng-template">
+  <ion-popover-view>
+    <ion-header-bar>
+      <h1 class="title">Options</h1>
+    </ion-header-bar>
+    <ion-content>
+      <div class="list">
+      <p ng-click="flagPost(this_entry.value)">Flag this post as inappropriate</p>
+      </div>
+    </ion-content>
+  </ion-popover-view>
+</script>
