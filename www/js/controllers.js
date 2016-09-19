@@ -1334,7 +1334,7 @@ if (data=="results submitted") {
 $scope.selected= function (qn,score) {
   $scope.assessement[qn].score=score;
   //console.log(score);
-  $scope.choice_selected=(score);
+  $scope.choice_selected=score;
 }
 
 $scope.viewReport = function () {
